@@ -169,9 +169,8 @@ if (error) {
 
 });
 
-
-$("#profile").click(function()
+$("#profileP").click(function()
     {
-      window.location.href = "MainPage.html";
+      window.location.href = "profile.html";
   });
 //Logo
