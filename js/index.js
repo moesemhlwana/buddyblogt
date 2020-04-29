@@ -161,7 +161,6 @@ if (error) {
 }
 
 
-
 });
 
 } else {
@@ -169,3 +168,10 @@ if (error) {
 }
 
 });
+
+
+$("#profile").click(function()
+    {
+      window.location.href = "MainPage.html";
+  });
+//Logo
