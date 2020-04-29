@@ -1,13 +1,13 @@
-var firebaseConfig = {
-  apiKey: "AIzaSyDJiqzwnz67hiccieTlhxAa3vua3Kd0s1I",
-  authDomain: "buddyblogt.firebaseapp.com",
-  databaseURL: "https://buddyblogt.firebaseio.com",
-  projectId: "buddyblogt",
-  storageBucket: "buddyblogt.appspot.com",
-  messagingSenderId: "445536323990",
-  appId: "1:445536323990:web:0f6bb50e8219fb8df975b7",
-  measurementId: "G-5PZFFLLLB0"
-};
+ var firebaseConfig = {
+    apiKey: "AIzaSyAsG6B509P2CuHNPscEUbj37U2oaaWq4OQ",
+    authDomain: "buddyblogdb.firebaseapp.com",
+    databaseURL: "https://buddyblogdb.firebaseio.com",
+    projectId: "buddyblogdb",
+    storageBucket: "buddyblogdb.appspot.com",
+    messagingSenderId: "222785122276",
+    appId: "1:222785122276:web:5105ed633c76b45e9321f1",
+    measurementId: "G-R4K9HWH7PW"
+  };
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
 
@@ -161,6 +161,7 @@ if (error) {
 }
 
 
+
 });
 
 } else {
@@ -169,8 +170,19 @@ if (error) {
 
 });
 
+function switchView(view){
+  $.get({
+    url:view,
+    cache:false,
+  })
+  .then(function(data){
+    $("#container").html(data);
+  });
+
+}
+
+
 $("#profileP").click(function()
     {
       window.location.href = "profile.html";
   });
-//Logo
